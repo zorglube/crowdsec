@@ -176,6 +176,8 @@ It is meant to allow you to manage bans, parsers/scenarios/etc, api and generall
 	rootCmd.AddCommand(NewConsoleCmd())
 	rootCmd.AddCommand(NewExplainCmd())
 	rootCmd.AddCommand(NewHubTestCmd())
+	rootCmd.AddCommand(NewWizardCmd())
+
 	if err := rootCmd.Execute(); err != nil {
 		log.Fatalf("While executing root command : %s", err)
 	}
